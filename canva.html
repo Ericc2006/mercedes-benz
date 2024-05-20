@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>AMGG</title>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logo" src="bildes/logo.png" alt="mercades" ></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="links" href="gallery.html">Galerijas</a></li>
+                <li><a class="links" href="spec.html">Specifikācijas</a></li>
+                <li><a class="links" href="quiz.html">Jautājumi</a></li>
+                <li><a class="links" href="canva.html">Canva</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <h2>Apļa laukuma un rādiusa aprēķināšana</h2>
+
+    <form id="aplisForm">
+        <label for="radiuss">Ievadiet apļa rādiusu:</label>
+        <input type="number" id="radiuss" name="radiuss" min="0" required>
+        <br>
+
+        <button type="button" onclick="aprekinatAplis()">Aprēķināt</button>
+    </form>
+
+    <div id="aplisRezultats"></div>
+
+    <h2>Zīmēšana</h2>
+
+    <form id="zimejumsForm">
+        <label for="krassa">Ievadiet krāsu:</label>
+        <input type="color" id="krassa" name="krassa" value="#ff0000" required>
+        <br>
+
+        <label for="x">Ievadiet x koordinātu:</label>
+        <input type="number" id="x" name="x" min="0" max="500" required>
+        <br>
+
+        <label for="y">Ievadiet y koordinātu:</label>
+        <input type="number" id="y" name="y" min="0" max="300" required>
+        <br>
+
+        <label for="r">Ievadiet rādiusu:</label>
+        <input type="number" id="r" name="r" min="0" max="100" required>
+        <br>
+
+        <button type="button" onclick="zimet()">Uzzīmēt</button>
+    </form>
+
+    <canvas id="canvasZimejums" width="500" height="300"></canvas>
+
+
+    <h2>Taisnleņķa trijstūri</h2>
+
+    <form id="trijsturisForm">
+        <label for="katete1">Ievadiet kateti 1:</label>
+        <input type="number" id="katete1" name="katete1" min="0" required>
+        <br>
+
+        <label for="katete2">Ievadiet kateti 2:</label>
+        <input type="number" id="katete2" name="katete2" min="0" required>
+        <br>
+
+        <button type="button" onclick="aprekinatTrijsturi()">Aprēķināt un uzzīmēt</button>
+    </form>
+
+    <canvas id="canvasTrijsturis" width="500" height="300"></canvas>
+    <div id="trijsturisRezultats"></div>
+
+    <footer>
+        <p class="footer">©2024 Mercades-Benz, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

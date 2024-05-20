@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>AMGG</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logo" src="bildes/logo.png" alt="mercades" ></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="links" href="gallery.html">Galerijas</a></li>
+                <li><a class="links" href="spec.html">Specifikācijas</a></li>
+                <li><a class="links" href="quiz.html">Jautājumi</a></li>
+                <li><a class="links" href="canva.html">Canva</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="c">
+        <h1>Mercedes-AMG E 63 S viktorīna</h1>
+
+        <p>Atbildiet uz visiem jautājumiem, cik vien labi spējat. Jūsu rezultāts tiks parādīts beigās.</p>
+
+        <form id="quiz">
+            <div class="que">
+                <p>Kāds dzinējs ir aprīkots Mercedes-AMG E 63 S?</p>
+                <label for="answer1">
+                    <input type="radio" id="answer1" name="question1" value="correct"> 4,0 litru V8 ar biturbo piepūti
+                </label>
+                <label for="answer2">
+                    <input type="radio" id="answer2" name="question1" value="incorrect"> 3,0 litru V6 ar biturbo piepūti
+                </label>
+                <label for="answer3">
+                    <input type="radio" id="answer3" name="question1" value="incorrect"> 2,0 litru četru cilindru dzinējs
+                </label>
+            </div>
+
+            <div class="que">
+                <p>Cik ātri Mercedes-AMG E 63 S var paātrināties no 0 līdz 100 km/h?</p>
+                <label for="answer4">
+                    <input type="radio" id="answer4" name="question2" value="incorrect"> 4,5 sekundēs
+                </label>
+                <label for="answer5">
+                    <input type="radio" id="answer5" name="question2" value="incorrect"> 5,5 sekundēs
+                </label>
+                <label for="answer6">
+                    <input type="radio" id="answer6" name="question2" value="correct"> 3,3 sekundēs
+                </label>
+            </div>
+
+            <div class="que">
+                <p>Kāds ir Mercedes-AMG E 63 S maksimālais ātrums?</p>
+                <label for="answer7">
+                    <input type="radio" id="answer7" name="question3" value="correct"> 290 km/h (elektroniski ierobežots)
+                </label>
+                <label for="answer8">
+                    <input type="radio" id="answer8" name="question3" value="incorrect"> 250 km/h
+                </label>
+                <label for="answer9">
+                    <input type="radio" id="answer9" name="question3" value="incorrect"> 200 km/h
+                </label>
+            </div>
+            <div class="que">
+                <p>Kāda ir Mercedes-AMG E 63 S degvielas patēriņš?</p>
+                <label for="answer10">
+                    <input type="radio" id="answer10" name="question4" value="incorrect"> 15,0 l/100km (kombinētais)
+                </label>
+                <label for="answer11">
+                    <input type="radio" id="answer11" name="question4" value="correct"> 11,8 l/100km (kombinētais)
+                </label>
+                <label for="answer12">
+                    <input type="radio" id="answer12" name="question4" value="incorrect"> 20,0 l/100km (kombinētais)
+                </label>
+            </div>
+
+
+            <button type="submit" class="quizans">Pārbaudīt atbildes</button>
+        </form>
+
+        <div id="r"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+<footer>
+    <p class="footer">©2024 Mercades-Benz, Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>

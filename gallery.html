@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Galerija</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img class="logo" src="bildes/logo.png" alt="mercades" ></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="links" href="gallery.html">Galerijas</a></li>
+                <li><a class="links" href="spec.html">Specifikācijas</a></li>
+                <li><a class="links" href="quiz.html">Jautājumi</a></li>
+                <li><a class="links" href="canva.html">Canva</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+<div id="slider">
+<figure>
+
+<img src="bildes/photo1.jpg">
+<img src="bildes/photo2.jpg">
+<img src="bildes/photo3.jpg">
+<img src="bildes/photo4.jpg">
+<img src="bildes/photo6.jpg">
+
+
+
+
+</figure>
+
+<button class="btn-prev"><i class="fa fa-arrow-circle-left"></i> </button>
+<button class="btn-next"><i class="fa fa-arrow-circle-right"></i> </button>
+
+</div>
+
+
+        <footer>
+            <p class="footer">©2024 Mercades-Benz, Inc. All rights reserved.</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var x = 0;
+
+                $('.btn-next').click(function(){
+
+                x= (x<=300)?(x+100):0;
+              $('figure').css('left', -x+'%');
+                });
+
+
+
+             $('.btn-prev').click(function(){
+
+                x= (x>=100)?(x-100):400;
+              $('figure').css('left', -x+'%');
+            });
+            });
+        </script>
+
+</body>
+</html>

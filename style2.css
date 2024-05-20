@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-width: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+li, a, button {
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+
+}
+
+.links {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #949494;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+    background: url("bildes/e63.jpg");
+    background-size: cover;
+}
+
+.text {
+
+    color:#ffffff;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 300px;
+    text-align: right;
+}
+
+.main-text {
+    color: #d9d9d9;
+    text-shadow: 2px 2px #000000;
+    font-size: 30px;
+    padding-bottom: 80px;
+}
+
+.description {
+    text-shadow: 2px 2px #000000;
+    color:#d9d9d9;
+    font-size: 25px;
+    padding-bottom: 80px;
+}
+
+
+.price {
+    text-shadow: 2px 2px #000000;
+    font-size: 25px;
+    color:#d9d9d9;
+}
+
+footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #slider{
+    width: 90%;
+    height:800px;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+}
+
+
+div#slider { overflow: hidden; border: 1px solid #ff0000; }
+div#slider figure img { width: 20%; height:800px;  float: left; }
+div#slider figure {
+	position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+
+
+}
+
+.btn-next, .btn-prev{
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  background: #000000;
+  padding: 10px;
+  font-size: 30px;
+  border:none;
+}
+
+.btn-prev{
+  left: 0px;
+}
+.btn-next{
+  right: 0px;
+}
